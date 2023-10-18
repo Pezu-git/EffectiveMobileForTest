@@ -1,0 +1,45 @@
+
+
+#get-form {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-item-header,
+.user-item{
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 2fr 1fr 2fr 1fr 0.3fr;
+  padding: 20px;
+  align-items: center;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.user-item-header {
+  font-weight: bold;
+
+}
+.user-item {
+  border-top: 1px solid #3d3d3d;
+}
+
+.user-noneActive,
+.user-active{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.user-active {
+  background-color: green;
+}
+.user-noneActive {
+  background-color: red;
+}
+.btn-user-update {
+  border: 2px solid #3d3d3d;
+}
+.btn-user-update:hover {
+  background-color: #3d3d3d;
+  color: white;
+}

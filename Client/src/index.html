@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap w/ Webpack</title>
+</head>
+<body>
+        <div class="menu-container">
+            <div id="create-get-btns-container">
+                <div class="create menu-item">
+                    <button class="btn menu-btn" id="openCreateFormBtn">
+                        Создать
+                    </button>
+                </div>
+                <div class="get menu-item">
+                    <button class="btn menu-btn" id="get_btn">
+                        Получить
+                    </button>
+                </div>
+            </div>
+
+            <div class="get menu-item" id="history-id-container">
+                <input type="number" id="history-id"  placeholder="ID пользователя">
+                <button class="btn menu-btn" id="history_btn">
+                    История
+                </button>
+            </div>
+        </div>
+
+        <div class="forms-container">
+
+            <div class="forms-item" id="get-form">
+                <div id="start-text">Обновите данные!</div>
+            </div>
+            <div class="forms-item display-none" id="history-form">
+            </div>
+            <nav aria-label="..." id="pagination-buttons" class="display-none">
+                <ul class="pagination" id="pagination-ul">
+                    <li class="page-item">
+                        <a class="page-link page-pagination-btn" id="page-pagination-prew" href="#">Назад</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link page-pagination-count" id="page-pagination-count" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link page-pagination-btn" id="page-pagination-next" href="#">Вперёд</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav aria-label="..." id="pagination-buttons-history" class="display-none">
+                <ul class="pagination" id="pagination-ul-history">
+                    <li class="page-item">
+                        <a class="page-link page-pagination-btn" id="page-pagination-prew-history" href="#">Назад</a>
+                    </li>
+                    <li class="page-item disabled">
+                        <a class="page-link page-pagination-count" id="page-pagination-count-history" href="#">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link page-pagination-btn" id="page-pagination-next-history" href="#">Вперёд</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="display-none" id="create-form-container">
+            <form action="" id="create-form">
+                <div id="create-user-label">Добавить нового пользователя</div>
+                <div class="mb-3">
+                    <label for="firstName_create" class="form-label">Введите имя</label>
+                    <input type="text" class="form-control" id="firstName_create" required>
+                </div>
+                <div class="mb-3">
+                    <label for="lastName_create" class="form-label">Введите фамилию</label>
+                    <input type="text" class="form-control" id="lastName_create" required>
+                </div>
+                <div class="mb-3">
+                    <label for="age_create" class="form-label">Возраст</label>
+                    <input type="number" class="form-control" id="age_create" required>
+                </div>
+                <div class="mb-3">
+                    <label for="profession_create" class="form-label">Профессия</label>
+                    <input type="text" class="form-control" id="profession_create" required>
+                </div>
+                <div id="create-btns-container">
+                    <button type="submit" class="btn" id="create-form-btn">Сохранить</button>
+                    <button type="button" class="btn" id="create-form-btn-cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+        <div class="display-none" id="update-form-container">
+            <form action="" id="update-form">
+                <div id="update-user-label">Изменить данные пользователя</div>
+                <div class="mb-3">
+                    <label for="firstName_update" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="firstName_update">
+                </div>
+                <div class="mb-3">
+                    <label for="lastName_update" class="form-label">Фамилия</label>
+                    <input type="text" class="form-control" id="lastName_update">
+                </div>
+                <div class="mb-3">
+                    <label for="age_update" class="form-label">Возраст</label>
+                    <input type="number" class="form-control" id="age_update">
+                </div>
+                <div class="mb-3">
+                    <label for="profession_update" class="form-label">Профессия</label>
+                    <input type="text" class="form-control" id="profession_update">
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="isActive_update">
+                    <label class="form-check-label" for="isActive_update">Активен</label>
+                </div>
+                <div id="update-btns-container">
+                    <button type="button" class="btn" id="update-form-btn">Сохранить</button>
+                    <button type="button" class="btn" id="update-form-btn-cancel">Отмена</button>
+                </div>
+            </form>
+        </div>
+
+</body>
+</html>
